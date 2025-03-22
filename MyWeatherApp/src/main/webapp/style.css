@@ -1,0 +1,156 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #fdbb2d, #22c1c3);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.search-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 80%;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search-form input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-form button {
+    padding: 12px 18px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #22c1c3;
+    transition: 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #fdbb2d;
+    color: white;
+}
+
+/* Main Weather Card Section */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.weather-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.city-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.weather-condition {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 64px;
+    font-weight: 700;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.additional-info {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.additional-info div {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .search-form input {
+        width: 65%;
+    }
+
+    .weather-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+}
